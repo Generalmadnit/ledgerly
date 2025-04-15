@@ -15,8 +15,9 @@
 -- drop table transactions;
 
 create table transactions(
+	uid integer generated always as identity primary key,
 	transaction_type varchar(30),
-	paid_to varchar(30),
+	recipient varchar(30),
 	expense_type varchar(30),
 	amount integer,
 	remarks varchar(30)	
