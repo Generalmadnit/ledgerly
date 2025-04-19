@@ -1,2 +1,4 @@
 http://127.0.0.1:8000/ - root 
 http://127.0.0.1:8000/dbdata - data fetch url
+http://127.0.0.1:8000/dbupdt - to update the data based on uid
+http://127.0.0.1:8000/dbadd - to add the data
