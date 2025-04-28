@@ -2,6 +2,7 @@ import psycopg2
 import creds
 import matplotlib.pyplot as plt
 from collections import defaultdict
+import os
 
 conn = psycopg2.connect(
     host="localhost",         
@@ -40,4 +41,6 @@ plt.xlabel('Category')
 plt.ylabel('Total Expense')
 plt.title('Debited Expenses by Category')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
+current_directory = os.getcwd()
+plt.savefig(os.path.join(current_directory,'/ledgerly/src/ledgerly/backend files/reports/monthly.jpg'))
 plt.show()
