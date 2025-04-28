@@ -2,7 +2,7 @@ import psycopg2
 import creds
 import matplotlib.pyplot as plt
 from collections import defaultdict
-import os
+from pathlib import Path
 
 conn = psycopg2.connect(
     host="localhost",         
@@ -39,8 +39,9 @@ plt.figure(figsize=(4.83, 2.36))
 plt.bar(categories, expenses, color='skyblue')
 plt.xlabel('Category')
 plt.ylabel('Total Expense')
-plt.title('Debited Expenses by Category')
+plt.title('Monthly Expenses by Category')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-current_directory = os.getcwd()
-plt.savefig(os.path.join(current_directory,'/ledgerly/src/ledgerly/backend files/reports/monthly.jpg'))
+current_directory = Path.cwd()
+saveLoc = current_directory / "ledgerly" / "src" / "ledgerly" / "frontend" / "reports" / "monthly.jpg"
+plt.savefig(saveLoc)
 plt.show()

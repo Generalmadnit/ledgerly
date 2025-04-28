@@ -1,11 +1,8 @@
-# Sample backend file
+from pathlib import Path
 
-from fastapi import FastAPI
+current_directory = Path.cwd()
 
-app = FastAPI()
+print(current_directory)
+# addDir = current_directory / "ledgerly" / "src" / "ledgerly" / "backend files" / "reports"
 
-@app.get("/")
-async def root():
-    return {"message":"Hello World!"}
-
-# to run the file use the command uvicorn {filename}:app --reload
+# print("Additional working directory:", addDir)

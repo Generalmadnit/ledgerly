@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package ledgerly;
+package ledgerly.frontend;
 
 /**
  *
@@ -64,7 +64,6 @@ public class Ledger extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ledgerly");
-        setPreferredSize(new java.awt.Dimension(1080, 768));
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -246,11 +245,11 @@ public class Ledger extends javax.swing.JFrame {
 
         jLabel2.setText("Quarterly Report");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reports/monthly.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ledgerly/backend files/reports/monthly.jpg"))); // NOI18N
 
         jLabel5.setText("Monthly Report");
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reports/quarterly.jpg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ledgerly/frontend/reports/quarterly.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
