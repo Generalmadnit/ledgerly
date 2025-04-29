@@ -1,0 +1,15 @@
+1. While working with backend files use the backend path (/ledgerly/src/ledgerly/backend)
+
+2. While working with frontend files use the /ledgerly path
+
+3. While commiting the changes use the root path (/)
+
+4. When the frontend file uses the frontend path there won't be any problem for the generation of file
+
+5. As of now when a row is deleted and all the data need to have new UID then use 
+select * from transactions order by uid;
+then drop the table and then copy the file contents into it
+COPY transactions(transaction_type, recipient, expense_type, amount, remarks, paid_date)
+FROM 'C:/path/filename.csv'
+DELIMITER ','
+CSV HEADER;
