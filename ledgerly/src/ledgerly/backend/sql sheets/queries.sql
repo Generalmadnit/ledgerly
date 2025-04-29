@@ -46,6 +46,6 @@ select * from transactions order by uid;
 -- delete from transactions where transaction_type = 'Debited';
 
 -- COPY transactions(transaction_type, recipient, expense_type, amount, remarks, paid_date)
--- FROM 'C:/Users/pathu/OneDrive/Desktop/transactions.csv'
+-- FROM 'C:/path/filename.csv'
 -- DELIMITER ','
 -- CSV HEADER;
