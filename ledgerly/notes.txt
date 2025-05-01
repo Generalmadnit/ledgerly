@@ -13,3 +13,5 @@ COPY transactions(transaction_type, recipient, expense_type, amount, remarks, pa
 FROM 'C:/path/filename.csv'
 DELIMITER ','
 CSV HEADER;
+
+6. While working with SQL use the queries.sql file

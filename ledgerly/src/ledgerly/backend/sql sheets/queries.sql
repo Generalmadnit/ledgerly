@@ -16,7 +16,7 @@
 -- Inserting query (C)
 -- insert into transactions
 -- (transaction_type, recipient, expense_type, amount, remarks, paid_date)
--- values('Debited','Ratnadeep','Necessities',758,'Soaps & detergents','2025-05-01');
+-- values('Credited','Prasanna','Food',25,'Nenu eppudo vesa anta','2025-05-01');
 
 -- To view all the rows in table (R)
 select * from transactions order by uid;
