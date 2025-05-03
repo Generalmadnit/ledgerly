@@ -16,15 +16,19 @@
 -- Inserting query (C)
 -- insert into transactions
 -- (transaction_type, recipient, expense_type, amount, remarks, paid_date)
--- values('Credited','Prasanna','Food',25,'Nenu eppudo vesa anta','2025-05-01');
+-- values('Debited','PG shop','Food',20,'Kurkure puff corns','2025-05-02');
 
 -- To view all the rows in table (R)
 select * from transactions order by uid;
 
--- Updating a row (U)
+-- Updating a row with integers (U)
 -- update transactions
 -- set uid = 1
 -- where uid = 2;
+
+-- Updating a row with a String (U)
+-- UPDATE transactions
+-- SET remarks = REPLACE(remarks, 'Kurkura puff cors', 'Kurkure puff corns');
 
 -- To delete a transaction (D)
 -- delete from transactions where uid = 1;
@@ -45,7 +49,8 @@ select * from transactions order by uid;
 
 -- delete from transactions where transaction_type = 'Debited';
 
+-- To copy from the file store locally
 -- COPY transactions(transaction_type, recipient, expense_type, amount, remarks, paid_date)
--- FROM 'C:/path/filename.csv'
+-- FROM 'C:/path/transactions.csv'
 -- DELIMITER ','
 -- CSV HEADER;

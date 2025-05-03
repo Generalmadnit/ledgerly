@@ -32,9 +32,7 @@ for row in rows:
         category_expense[category] += amount
 
 categories = list(category_expense.keys())
-print(categories)
 expenses = list(category_expense.values())
-print(expenses)
 
 cur.close()
 conn.close()
