@@ -17,7 +17,7 @@ rows = cur.fetchall()
 
 for row in rows:
     print(row)
+    print(row[6].month)
 
-print(row[6].month)
 cur.close()
 conn.close()
