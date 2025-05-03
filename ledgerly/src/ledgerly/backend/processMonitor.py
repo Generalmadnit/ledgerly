@@ -7,12 +7,13 @@ def process_memory():
     return mem_info.rss
 
 mem_before = process_memory()
+print(mem_before)
+
 cpcnt = os.cpu_count()
 cpcnt.bit_length
 print(cpcnt)
 print(type(cpcnt))
+
 mem_after = process_memory()
-print("{}:consumed memory: {:,}".format("This program consumes", mem_before, mem_after, mem_after - mem_before))
-# process = psutil.Process(os.getpid())
-# ramusg = process.memory_info()
-# ramusg = os.system
+print(mem_after)
+print("{}:consumed memory: {:,}".format("This program consumes",mem_after - mem_before))
