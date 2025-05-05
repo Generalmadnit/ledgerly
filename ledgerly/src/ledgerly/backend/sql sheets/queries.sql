@@ -16,7 +16,7 @@
 -- Inserting query (C)
 -- insert into transactions
 -- (transaction_type, recipient, expense_type, amount, remarks, paid_date)
--- values('Debited','PG shop','Food',20,'Kurkure puff corns','2025-05-02');
+-- values('Credited','All','Credit',2800,'Movie tickets','2025-05-04');
 
 -- To view all the rows in table (R)
 select * from transactions order by uid;
@@ -31,7 +31,7 @@ select * from transactions order by uid;
 -- SET remarks = REPLACE(remarks, 'Kurkura puff cors', 'Kurkure puff corns');
 
 -- To delete a transaction (D)
--- delete from transactions where uid = 1;
+-- delete from transactions where recipient = 'PVR Cinemas';
 -- To drop table
 -- drop table transactions;
 

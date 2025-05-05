@@ -34,6 +34,12 @@ for row in rows:
 categories = list(category_expense.keys())
 expenses = list(category_expense.values())
 
+sorted_items = sorted(category_expense.items(), key=lambda x: x[1])
+
+categories = [item[0] for item in sorted_items]
+expenses = [item[1] for item in sorted_items]
+
+
 cur.close()
 conn.close()
 

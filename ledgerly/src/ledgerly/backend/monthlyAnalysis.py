@@ -42,6 +42,6 @@ plt.ylabel('Total Expense')
 plt.title('Monthly Expenses by Category')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 current_directory = Path.cwd()
-saveLoc = current_directory / "ledgerly" / "src" / "ledgerly" / "frontend" / "reports" / "monthly.jpg"
+saveLoc = current_directory / "frontend" / "reports" / "monthly.jpg"
 plt.savefig(saveLoc)
 plt.show()

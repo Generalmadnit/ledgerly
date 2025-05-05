@@ -1,4 +1,4 @@
-1. While working with backend files use the backend path (/ledgerly/src/ledgerly/backend)
+1. While working with backend files use the backend path (/ledgerly/src/ledgerly/)
 
 2. While working with frontend files use the /ledgerly path
 
