@@ -56,7 +56,7 @@ public class Ledger extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        monthlyPanel = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -245,7 +245,11 @@ public class Ledger extends javax.swing.JFrame {
 
         jLabel2.setText("Quarterly Report");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ledgerly/frontend/reports/monthly.jpg"))); // NOI18N
+        monthlyPanel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        monthlyPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ledgerly/frontend/reports/monthly.jpg"))); // NOI18N
+        monthlyPanel.setMaximumSize(new java.awt.Dimension(480, 300));
+        monthlyPanel.setMinimumSize(new java.awt.Dimension(480, 300));
+        monthlyPanel.setPreferredSize(new java.awt.Dimension(480, 300));
 
         jLabel5.setText("Monthly Report");
 
@@ -270,7 +274,7 @@ public class Ledger extends javax.swing.JFrame {
                                 .addContainerGap()
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(monthlyPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -288,7 +292,7 @@ public class Ledger extends javax.swing.JFrame {
                         .addGap(36, 36, 36)
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)))
+                        .addComponent(monthlyPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 269, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -407,7 +411,6 @@ public class Ledger extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -423,6 +426,7 @@ public class Ledger extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel monthlyPanel;
     private javax.swing.JButton trAddBtn;
     private javax.swing.JTextField trAmount;
     private com.toedter.calendar.JDateChooser trDate;
